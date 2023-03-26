@@ -4,14 +4,14 @@ metadata:
   name: cpu-resource-constraint
 spec:
   limits:
-  - default:  # this section defines defult limits
-      cpu:  500m
+  - default: # this section defines defult limits
+      cpu: 500m
     defaultRequest: # this section defines defult requests
-      cpu:  500m
+      cpu: 500m
     max:  # max and min define the limits range
       cpu: "1"
     min:
-      cpu:  100
+      cpu: 100
     type: container
 
 ---
