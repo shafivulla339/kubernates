@@ -6,14 +6,14 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  env:
-  - name: course
-    value: docker
-  - name: trainer
-    value: siva
-  - name: duration
-    value: 25hrs
-  - name: DB_HOST
-    value: db.admin.com
-  - name: username
-    value: sivakumar
+    env:
+    - name: course
+      value: docker
+    - name: trainer
+      value: siva
+    - name: duration
+      value: 25hrs
+    - name: DB_HOST
+      value: db.admin.com
+    - name: username
+      value: sivakumar
