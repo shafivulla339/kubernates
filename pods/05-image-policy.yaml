@@ -4,9 +4,8 @@ metadata:
   name: update-image-policy
 spec:
   containers:
-    - name: nginx
-      image:  nginx
-      imagePullPolicy: Always
-      Ports:
-      containerPort: 80
-      
+  - name: nginx
+    image:  nginx
+    imagePullPolicy: Always
+    Ports:
+    containerPort: 80
