@@ -14,7 +14,7 @@ spec:
 
 ---
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
   name: nginx-service
 spec:
@@ -25,4 +25,4 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
-    
+
