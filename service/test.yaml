@@ -7,11 +7,10 @@ metadata:
     server: nginx
 spec:
   containers:
-  - name: nginx
-    image: nginx
-    ports:
-      containerPort: 80
-
+    - name: nginx
+      image: nginx
+      ports:
+      - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -22,7 +21,6 @@ spec:
   selector:
     server: nginx
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-    
+    - protocol: TCP
+      port: 80
+      targetPort: 80
